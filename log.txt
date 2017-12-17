@@ -1,0 +1,6 @@
+usi
+id name Kifuwarabe_Rust
+id author Muzudho
+usiok
+go
+bestmove resign

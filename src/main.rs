@@ -11,7 +11,8 @@ thread_local!(
     // ログ（書き込み・追加モード）
     pub static LOG: RefCell<BufWriter<File>> ={
         let m = BufWriter::new(
-            OpenOptions::new().write(true).append(true).open("log.txt").unwrap());
+            OpenOptions::new().create(true).write(true).append(true)
+                .open("log.txt").unwrap());
         RefCell::new(m)
     }
 );
